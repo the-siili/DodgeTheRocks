@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(11, 4, 29);
+}
+
+
+.button-58 {
+  align-items: center;
+  background-color: rgb(11, 4, 29);
+  border: 2px solid rgb(255, 0, 0);
+  box-sizing: border-box;
+  color: #ff0000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-58:focus {
+  color: #171e29;
+}
+
+.button-58:hover {
+  background-color: rgb(18, 8, 44);
+  border-color: #8a0202;
+}
+
+.button-58:active {
+    background-color: rgb(28, 17, 56);
+    border-color: #310000;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}

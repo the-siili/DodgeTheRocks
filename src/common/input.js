@@ -3,23 +3,25 @@
 
 
 export let Buttons = {
-    UP:{ codes:['w'], pressed:false},
-    DOWN:{ codes:['s'], pressed:false},
-    LEFT:{ codes:['a'], pressed:false},
-    RIGHT:{ codes:['d'], pressed:false}
+    UP:{ codes:['w', 'ArrowUp'], pressed:false},
+    DOWN:{ codes:['s', 'ArrowDown'], pressed:false},
+    LEFT:{ codes:['a', 'ArrowLeft'], pressed:false},
+    RIGHT:{ codes:['d', 'ArrowRight'], pressed:false},
+    SPACE:{ codes:[' '], pressed:false},
+    SHIFT:{ codes:['Shift'], pressed:false}
 }
-
 
 
 
 window.addEventListener("keydown", function(e) {
     for (let [key, button] of Object.entries(Buttons)){
-        console.log(button);
         button.codes.forEach(code => {
-            if(e.key == code) { button.pressed = true; }
+            if(e.key == code) { 
+                button.pressed = true;
+            }
         });
     }
-  });
+});
 
   window.addEventListener("keyup", function(e) {
     for (let [key, button] of Object.entries(Buttons)){
