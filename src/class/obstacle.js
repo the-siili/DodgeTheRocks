@@ -1,6 +1,5 @@
-import * as THREE from 'three';
-import * as GLTFLDR from 'three/addons/loaders/GLTFLoader.js'
-
+import * as THREE from '../three/three';
+import * as GLTFLDR from "../../node_modules/three/examples/jsm/loaders/GLTFLoader"
 import { Game } from '../main';
 import { OpenDeathMenu } from '../death';
 

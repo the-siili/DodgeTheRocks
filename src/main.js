@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from './three/three';
 
 import * as PLAYER from "./class/player";
 import {Obstacle} from "./class/obstacle"
